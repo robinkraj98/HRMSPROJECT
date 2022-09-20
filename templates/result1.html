@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Python Guides</title>
+    <style>
+        h1 {
+          text-align: center;
+        }
+        td, th {
+          text-align: center;
+        }
+      
+
+
+table{
+width: 100%;
+border-collapse:collapse;
+border: 1px solid black;
+}
+table td{line-height:25px;padding-left:15px;}
+table th{background-color:#fbc403; color:#363636;}
+
+</style>
+</head>
+<!--<body>
+    
+      <h1>List of Employees</h1>
+      <table border="1"cols="2">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Department</th>
+			<th>Joined</th>
+			
+		
+			
+			<th>Account Number</th>
+            <th>Bank</th>
+            <th>Salary</th>
+            <th>Month</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for person in data %}
+		
+
+            <tr>
+              <td>{{ person.id }}</td>
+              <td>{{ person.first_name }}</td>
+              <td>{{ person.last_name }}</td>
+              <td>{{ person.department }}</td>
+			  <td>{{ person.joined }}</td>
+			  
+			  
+              <td>{{ person.nuban }}</td>
+              
+              <td>{{ person.bank }}</td>
+			  <td>{{ person.salary }}</td>
+			  <td>MAY</td
+            </tr>
+          {% endfor %}    
+        </tbody>
+      </table>
+</body>
+</html>
+
+
+
+
+
+
+<html>
+<head>-->
+
+
+
+
+<body>
+<table border="1">
+{% for person in data %}
+<tr height="100px" style="background-color:#363636;color:#ffffff;text-align:center;font-size:24px; font-weight:600;">
+<td colspan='4'><center>Symboisis pvt Limited</center></td>
+</tr>
+<tr>
+<th>Employee ID</th>
+<td>{{ person.id }}</td>
+<th>Employee Name</th>
+<td>{{ person.first_name }}&nbsp;{{ person.last_name }}</td>
+</tr>
+<!-----2 row--->
+<tr>
+<th>Bank</th>
+<td>x0x0x0</td>
+<th>Bank A/c No.</th>
+<td>0x2x6x25x6</td>
+</tr>
+<!------3 row---->
+<tr>
+<th>DOB</th>
+<td>23/02/xxxx</td>
+<th>Lop Days</th>
+<td>0</td>
+</tr>
+<!------4 row---->
+<tr>
+<th>PF No.</th>
+<td>26123456</td>
+<th>STD days</th>
+<td>30</td>
+</tr>
+<!------5 row---->
+<tr>
+<th>Location</th>
+<td>India</td>
+<th>Working Days</th>
+<td>30</td>
+</tr>
+<!------6 row---->
+<tr>
+<th>Department</th>
+<td>IT</td>
+<th>Designation</th>
+<td>Designer</td>
+</tr>
+</table>
+
+<br/>
+<table border="1">
+
+<tr style="background-color:#363636;color:#ffffff;">
+<td colspan='2'><center><b>Earnings</b></center></td>
+<td colspan='2'><center><b>Deductions</b></center></td>
+</tr>
+<tr>
+<th>Employee ID</th>
+<td>{{ person.id }}</td>
+<th>Employee Name</th>
+<td>{{ person.first_name }}&nbsp;{{ person.last_name }}</td>
+</tr>
+<!-----2 row--->
+<tr>
+<th>Bank</th>
+<td>x0x0x0</td>
+<th>Bank A/c No.</th>
+<td>0x2x6x25x6</td>
+</tr>
+<!------3 row---->
+<tr>
+<th>DOB</th>
+<td>23/02/xxxx</td>
+<th>Lop Days</th>
+<td>0</td>
+</tr>
+<!------4 row---->
+<tr>
+<th>PF No.</th>
+<td>26123456</td>
+<th>STD days</th>
+<td>30</td>
+</tr>
+<!------5 row---->
+<tr>
+<th>Location</th>
+<td>India</td>
+<th>Working Days</th>
+<td>30</td>
+</tr>
+<!------6 row---->
+<tr>
+<th>Department</th>
+<td>IT</td>
+<th>Designation</th>
+<td>Designer</td>
+</tr>
+
+</table>
+<br>
+<table>
+<tr>
+<th>Gross Earnings</th>
+<td colspan='2'>11111</td>
+<th>Gross Deductions</th>
+<td colspan='2'>1100</td>
+
+</tr>
+
+<tr height="100px" style="background-color:#363636;color:#ffffff;text-align:center;font-size:12px; font-weight:600;">
+<th >Net Pay </th>
+<td colspan='4'>11000</td>
+</tr>
+</table>
+
+  {% endfor %}
+</table>
+
+</body>
+</html>

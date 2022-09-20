@@ -1,0 +1,35 @@
+Database host address:shekarsultimatetechnologies.mysql.pythonanywhere-services.com
+Username:shekarsultimatet
+password: root@123
+database:shekarsultimatet$hrms
+port:3306
+
+to specify in settings.py
+----------while testinfg in system----------------
+hrms -- database in local
+root--username in local
+root--password in local
+ 
+-------------------------------
+database name in pythonanywhere: shekarsultimatet$hrms
+
+if our database name is hrms in local in pythonanywhere
+username+$+localdatabase name will be create.
+
+username+$ this will be automatically added to database name which we specify while we are creating database.
+
+to see data go to mysql console from dashboard in pythonanywhere.
+it takes to mysql but we cannot create new users and we cannot grant permissions
+
+after uploading files as per structure
+
+go to bash and go to project folder hrms and then execute
+python manage.py makemigrations
+then
+python manage.py migrate
+
+to run project
+python manage.py runserver 
+to test in local
+
+-------in free only 2 consoles and only one application can be in running in pythonanywhere------

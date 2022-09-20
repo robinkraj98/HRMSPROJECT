@@ -1,0 +1,76 @@
+{% extends 'hrms/layout.html' %}
+{% load static %}
+{% block title %} Edit Employee | HRIS {% endblock title %}
+
+{% block content %}
+
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+            <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'hrms:dashboard' %}">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href=" {% url 'hrms:employee_all' %} ">Employee</a> </li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                    </ol>
+                </nav>
+                <div class="col-lg-12 grid-margin">
+                    <div class="card">
+                        <div class="card-body">
+                           <h4 class="text-center text-primary"><i class="fa fa-edit">&emsp; Download Employee Forms</i></h4><hr>
+						    <div class="table-responsive">
+                    <table class="table table-bordered">
+                      
+						  <!--<tr><td><a href="pdf/ ">abc</a></td></tr>-->
+						  
+						  <tr><td><a href="{% url 'hrms:formbpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->Form B</a></td></tr>
+						<tr><td><a href="{% url 'hrms:getempcard' pk=employee.pk %}">EmployementCard</a></td></tr>
+						  <tr><td><a href="{% url 'hrms:servicepdf' pk=employee.pk %}">ServiceCertificate</a></td></tr>
+						  <tr><td><a href="{% url 'hrms:leavepdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->LeaveRegister</a></td></tr>
+						  <tr><td><a href="{% url 'hrms:wagepdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->WageSlip</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:deductionsPdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->Deductions</a></td></tr>
+						  <tr><td><a href="{% url 'hrms:finespdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->Fines</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:advancespdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->Advances</a></td></tr>
+						   <!--<tr><td><a href="{% url 'hrms:overtimepdf' pk=employee.pk %}">Form B</a></td></tr>-->
+						   <tr><td><a href="{% url 'hrms:formApdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->formApdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:esiinspectionpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->esiinspectionpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:epfinspectionpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->epfinspectionpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:formvpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->formvpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:equalremunerationpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->equalremunerationpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:musterrollpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->musterrollpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:wagesregpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->wagesregpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:bankuploadpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->bankuploadpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:accidentpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->accidentpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:bonuspdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->bonuspdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:overtimepdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->overtime</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:formcpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->formcpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:formdpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->formdpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:formepdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->formepdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:mispdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->mispdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:annualreturnpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->annualreturnpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:poshpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->poshpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:workmenpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->workmenpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:masterpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->masterpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:esimcpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->esimcpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:epfecrpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->epfecrpdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:tdspdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->tdspdf</a></td></tr>
+						   <tr><td><a href="{% url 'hrms:labourinspectionpdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->labourinspectionpdf</a></td></tr>
+						    
+						  </table>
+						  </div>
+						   
+                                <!--<form enctype="multipart/form-data" class="form-group" method="POST">
+                                    {% csrf_token %}
+                                    <small class="mb-5">** All Fields are required</small>
+                                        {{form.as_p}}
+                                    <div class="text-center mt-3">
+                                        <button class="btn btn-outline-success btn-rounded"><i class="mdi mdi-cloud-download"></i>Update Employee</button></button>
+                                        
+                                    </div>
+                                </form>-->                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

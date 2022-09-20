@@ -1,0 +1,49 @@
+{% extends 'hrms/employeelayout.html' %}
+{% load static %}
+{% block title %} Edit Employee | HRIS {% endblock title %}
+
+{% block content %}
+
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+            <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'hrms:dashboard' %}">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href=" {% url 'hrms:employee_all' %} ">Employee</a> </li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                    </ol>
+                </nav>
+                <div class="col-lg-12 grid-margin">
+                    <div class="card">
+                        <div class="card-body">
+                           <h4 class="text-center text-primary"><i class="fa fa-edit">&emsp; Download Employee Forms</i></h4><hr>
+						    <div class="table-responsive">
+                    <table class="table table-bordered">
+                      
+						  <!--<tr><td><a href="pdf/ ">abc</a></td></tr>-->
+						  
+						
+						<tr><td><a href="{% url 'hrms:getempcard' pk=employee.pk %}">EmployementCard</a></td></tr>
+						  <tr><td><a href="{% url 'hrms:servicepdf' pk=employee.pk %}">ServiceCertificate</a></td></tr>
+						  <tr><td><a href="{% url 'hrms:leavepdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->LeaveRegister</a></td></tr>
+						  <tr><td><a href="{% url 'hrms:wagepdf' pk=employee.pk %}"><!--{{employee.emp_id}}-->WageSlip</a></td></tr>
+						  <tr><td><a href="{% url 'hrms:payslip' pk=employee.pk %}">Pay Slip</a></td></tr>
+						  </table>
+						  </div>
+						   
+                                <!--<form enctype="multipart/form-data" class="form-group" method="POST">
+                                    {% csrf_token %}
+                                    <small class="mb-5">** All Fields are required</small>
+                                        {{form.as_p}}
+                                    <div class="text-center mt-3">
+                                        <button class="btn btn-outline-success btn-rounded"><i class="mdi mdi-cloud-download"></i>Update Employee</button></button>
+                                        
+                                    </div>
+                                </form>-->                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

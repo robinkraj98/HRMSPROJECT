@@ -1,0 +1,7 @@
+<html>
+<body>
+{%for x in obj%}
+<a href="{% url 'hrms:getforma' x.id %} ">{{x.emp_id}}</a>
+ {% endfor %}
+</body>
+</html>

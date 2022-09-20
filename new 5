@@ -1,0 +1,17 @@
+{
+	"InvoiceNumber": "65952715",
+	"CreatedTime": 1646473027194,
+	"StoreID": "STR5646",
+	"PosID": "POS543",
+	"CustomerType": "NONPRIME",
+	"PaymentMethod": "CARD",
+	"DeliveryType": "HOME-DELIVERY",
+	"City": "Chennai",
+	"State": "Tamil Nadu",
+	"PinCode": "386032",
+	"ItemCode": "358",
+	"ItemDescription": "Restraint chair",
+	"ItemPrice": 1943.0,
+	"ItemQty": 2,
+	"TotalValue": 3886.0
+}

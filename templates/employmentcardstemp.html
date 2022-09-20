@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+
+
+div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+} 
+
+div.d {
+  text-align: justify;
+} 
+
+h1 {
+  font-size: 23px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+q {
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+	<table border=0.5 cellpadding=5 cellspacing=6 width='100%' style='border-collapse:
+	collapse;table-layout:fixed;width:auto'>
+
+	<tr>
+		<td style="background-color:rgb(229, 231, 234);" colspan="10"><b><h1><center>FORM XIV</center></h1></b></td>
+	</tr>
+
+	<tr>
+		<td style="background-color:rgb(210, 240, 211);" colspan="10"><h2><center>EMPLOYMENT CUM WAGE CARD</center></h2></td>
+	</tr>
+	<tr>
+		<td  colspan="10"><p><center>(Vide Rule 76 of Contract Labour (R&A) Central & A.P{T.S.} Rules, 1971)</center></p></td>
+	</tr>
+<p>
+	<tr>
+		<td style="background-color:rgb(210, 240, 211);" colspan="5">Name and Address of the Contractor</td>
+		<td style="background-color:rgb(210, 240, 211);" colspan="5">Name and Address of the Establishment in/under which Contract is carried on:</td>
+
+	</tr>
+
+	<tr>
+		<td  colspan="5">{{Employees.name_of_contractor}}
+			<br>
+				{{Employees.address_of_contractor}}
+			</br>
+		</td>
+		<td  colspan="5">{{Employees.name_of_contractor}}
+			<br>
+				{{Employees.address_of_contractor}}
+			</br>
+		</td>
+
+	</tr>
+
+	<tr>
+		<td style="background-color:rgb(210, 240, 211);" colspan="5">Nature of work and location of work:</td>
+		<td style="background-color:rgb(210, 240, 211);" colspan="5">Name and address of Principal Employer:</td>
+
+	</tr>
+	<tr>
+		<td  colspan="5">{{Employees.Nature_and_Location_of_Work}}
+		</td>
+		<td  colspan="5">{{Employees.Name_of_the_Principal_Employer}}
+			<br>
+				{{Employees.Address_of_the_principal_Employer}}
+			</br>
+		</td>
+
+	</tr>
+
+	
+	<tr>
+		<td colspan="5">1. Name of the Workman and address</td>
+		<td colspan="5"><center>{{Employees.Name_Employeer_Aadhar_Card}}</center></td>
+
+	</tr>
+
+	<tr>
+		<td colspan="5"></td>
+		<td colspan="5"><center>{{Employees.permanent_h_no_street_name}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5"></td>
+		<td colspan="5"><center>{{Employees.permanent_Village_Name}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5"></td>
+		<td colspan="5"><center>{{Employees.permanent_Mandal_District_Name}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5"></td>
+		<td colspan="5"><center>{{Employees.permanent_State_with_PIN_code}}</center></td>
+
+	</tr>
+	
+	<tr>
+		<td colspan="5">2. S.No. in the Register of Workmen Employed</td>
+		<td colspan="5"><center>{{Employees.Serial_no_Register_of_Workmen}}</center></td>
+
+	</tr>
+
+	<tr>
+		<td colspan="5">3. Nature of Employment /Designation</td>
+		<td colspan="5"><center>{{Employees.Designation_Nature_of_Work_Done}}</center></td>
+
+
+
+
+
+
+	</tr>
+	<tr>
+		<td colspan="5">4. Date of entry into service</td>
+		<td colspan="5"><center>{{Employees.Date_of_Joining}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">5. ESI No.</td>
+		<td colspan="5"><center>{{Employees.ESI_Number_If_Already_Exists}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">6.PF No.</td>
+		<td colspan="5"><center>{{Employees.EPF_UAN_Number_IfExists_Already}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">7. Wage rate (With particulars of unit in case of piece - work)</td>
+		<td colspan="5"><center>{{Employees.Monthly_rate_of_wages}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">8. Wage period</td>
+		<td colspan="5"><center>Apr-22</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">9. Tenure of Employment</td>
+		<td colspan="5"><center>AS PER CONTRACT</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">10.No. of days worked in a month</td>
+		<td colspan="5"><center>30</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">11. No. of units worked in case of piece rate workers</td>
+		<td colspan="5"><center>N/A</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">12. Rate of daily wages / piece rate</td>
+		<td colspan="5"><center>0</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">13. Amount of overtime wages</td>
+		<td colspan="5"><center>0</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">14. Gross wages payable</td>
+		<td colspan="3"><center>20000</center></td>
+		<td colspan="2"><center>ADVANCE</center></td>
+
+	</tr>
+
+	<tr>
+		<td  >15.Deductions, if any,</td>
+		<td  ><center>PF</center></td>
+		<td  ><center>{{Employees.PF_Amount}}</center></td>
+		<td  ><center>ESI</center></td>
+		<td  ><center>{{Employees.esi}}</center></td>
+		<td  ><center>PT</center></td>
+		<td><center>{{Employees.PT_Amount}}</center></td>
+		<td  ><center>TDS</center></td>
+		<td  ><center>{{Employees.TDS_Amount}}</center></td>
+		<td  ><center>{{Employees.ADV}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">16. Net amount of wages paid</td>
+		<td colspan="5"><center>{{Employees.Net_Salary}}</center></td>
+
+	</tr>
+	<tr>
+		<td colspan="5">Signature of the Representative of Contractor</td>
+		<td colspan="5"><center></center></td>
+
+	</tr>
+	
+</p>
+
+	
+
+	
+
+</body>
+</html>
